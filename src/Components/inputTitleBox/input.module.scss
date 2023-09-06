@@ -1,0 +1,25 @@
+@import '../../style_components/colors';
+
+.content_right_inputBox {
+  position: absolute;
+  padding: 7px;
+  bottom: 0;
+  width: 100%;
+  background-color: $backgroundCenterContent;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  svg {
+    color: $svg-color;
+    cursor: pointer;
+  }
+
+  input {
+    border: none;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../style_components/colors';
+
+.message {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  &_item {
+    padding: 6px 10px 6px 10px;
+
+    margin-bottom: 2px;
+    width: fit-content;
+    background-color: $background-message;
+    border-radius: 5px;
+
+    margin: 2px 10px 5px auto;
+  }
+
+  &_item_incoming {
+    padding: 6px 10px 6px 10px;
+
+    margin-bottom: 2px;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 5px;
+
+    margin: 2px 10px 5px auto;
+
+  }
+}

@@ -1,0 +1,98 @@
+@import '../../style_components/colors';
+
+.content_left {
+  &_svgGroup {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+
+  &_svgColor {
+    color: $svg-color;
+    cursor: pointer;
+  }
+}
+.numberBox {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  background-color: #fff;
+  left: 72%;
+  top: 20px;
+  z-index: 501;
+  border: 1px solid $border-color;
+  border-radius: 0px 20px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &_input {
+    width: 70%;
+    border-radius: 7px;
+    border: 1px solid $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 80%;
+      border: none;
+      padding: 0 10px;
+      text-align: center;
+      font-size: 18px;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  button {
+    width: 100px;
+    background-color: #4cae4f;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    font-size: 16px;
+    transition: background-color 0.1s ease-in-out;
+
+    &:hover {
+      background-color: darken($color: #4cae4f, $amount: 5%);
+    }
+    &:active {
+      background-color: darken($color: #4cae4f, $amount: 10%);
+    }
+  }
+}
+
+.svg {
+  color: $svg-color;
+  scale: 0.8;
+  cursor: pointer;
+}
+
+.error_format {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  height: 56px;
+  background-color: #fff;
+  top: 70%;
+  left: 85%;
+  
+  border: 1px solid $border-color;
+  border-radius: 0px 7px 7px 7px;
+
+  h6 {
+    margin: 0;
+  }
+}
